@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-^fw+z(itnin=r4)po@w13ih!kl6z-yh16fsuzdmp%dbg%@2^pt
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -75,14 +75,14 @@ WSGI_APPLICATION = 'todoproject.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-"default": {
-"ENGINE": "django.db.backends.mysql",
-"NAME": "mysql", # show databases;
-"HOST" : "127.0.0.1",
-"PORT" : 3306,
-"USER" : "root",
-"PASSWORD" : "0000",
-}
+    "default": {
+    "ENGINE": "django.db.backends.mysql",
+    "NAME": "mysql",
+    "HOST" : "127.0.0.1",
+    "PORT" : 3306,
+    "USER" : "root",
+    "PASSWORD" : "0000",
+    }
 }
 
 
